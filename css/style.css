@@ -37,3 +37,102 @@ button, input, select {
     font-family: inherit;
     color: inherit;
 }
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Movie Grid & Cards */
+
+/* header and footer */
+header {
+    background-color: var(--bg-surface);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--bg-accent);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo img {
+    height: 40px;
+    display: block;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;    
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent-color);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-icon, .profile-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    height: 450px;
+    background: linear-gradient(rgba(15,17,21,0.4), var(--bg-primary)), url('../images/thumbnail/banner.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: var(--text-muted);
+    margin-bottom: 25px;
+}
+
+.section-padding {
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 10px;
+}
