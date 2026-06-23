@@ -60,6 +60,15 @@ button, input, select {
     background-color: var(--accent-hover);
 }
 
+.btn-secondary {
+    background-color: var(--bg-accent);
+    color: var(--text-main);
+}
+
+.btn-secondary:hover {
+    background-color: #323743;
+}
+
 /* Movie Grid & Cards */
 .movie-grid {
     display: grid;
@@ -211,6 +220,35 @@ footer {
     margin-bottom: 20px;
     border-left: 4px solid var(--accent-color);
     padding-left: 10px;
+}
+
+/* movie detail */
+.detail-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.detail-poster {
+    flex: 0 0 300px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.detail-poster img {
+    width: 100%;
+    display: block;
+}
+
+.detail-meta-list {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    color: var(--text-muted);
+}
+
+.detail-overview {
+    margin-bottom: 25px;
 }
 
 /* categories */
