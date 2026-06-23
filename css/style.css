@@ -212,3 +212,26 @@ footer {
     border-left: 4px solid var(--accent-color);
     padding-left: 10px;
 }
+
+/* categories */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    background: linear-gradient(45deg, var(--bg-surface), var(--bg-accent));
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.category-card:hover {
+    border-color: var(--accent-color);
+    transform: scale(1.03);
+}
